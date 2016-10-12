@@ -6,7 +6,9 @@ import {v1} from "uuid";
 import {fromJS,Map,List} from "immutable";
 describe("first test", ()=>{
     it("should work!",()=>{
-        console.log(v1()+1);
+        var x = v1();
+        console.log(x+1);
+        console.log(x);
     })
 
 })
