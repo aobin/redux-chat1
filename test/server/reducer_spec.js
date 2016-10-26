@@ -24,7 +24,7 @@ describe("server reducer", ()=> {
             expect(finalState.get("rooms").size).to.equal(2);
             expect(finalState.getIn(["rooms", "0", "owner"])).to.equal("aobin2");
 
-        })
+        });
 
         it("test action creator", ()=> {
             let id = v1();
@@ -39,7 +39,7 @@ describe("server reducer", ()=> {
             expect(finalState.get("rooms").size).to.equal(2);
             expect(finalState.getIn(["rooms", "0", "owner"])).to.equal("aobin2");
 
-        })
+        });
 
     }
 );

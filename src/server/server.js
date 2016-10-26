@@ -15,7 +15,7 @@ app.use(express.static(rootPath+"/public"));
 
 app.get("/",(req,res)=>{
     //res.send("hello world")
-    res.render("index",{title:"hahahahaha"});
+    res.render("index",{student:{name:"aobin",age:10}});
 })
 
 //启动，babel-node src/server/server.js

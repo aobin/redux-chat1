@@ -19,7 +19,7 @@ describe("rooms", ()=>{
         const nextNextState = addRoom(nextState,{name:"second room",id:v1(),owner:"aobin2"});
         expect(nextNextState.getIn(["rooms",1,"name"])).to.equal("second room");
 
-    })
+    });
 
     const mockState = fromJS({rooms:[{name:"first name",id:v1(),owner:"aobin"}] });
 
